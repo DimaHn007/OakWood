@@ -45,7 +45,7 @@ The user can create an account and manage it. There will be the next pages for l
 
 **Use case diagram**
 
-<img src="./Documentation/use-case-diagram.png">
+<img src="use-case-diagram.png">
 <br/>
 <br/>
 
