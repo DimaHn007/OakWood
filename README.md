@@ -5,7 +5,7 @@
 - [Team](#team)
 - [Description](#project-description)
 - [Architecture](#architecture)
-- [Concurrency patterns usage](#monitoring)
+- [Concurrency patterns usage](#concurrency-patterns-usage)
 - [Storage](#storage)
 - [Resiliency model](#resiliency-model)
 - [Security model](#security-model)
