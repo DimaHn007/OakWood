@@ -68,7 +68,7 @@ The user can create an account and manage it. There will be the next pages for l
 | --------------- | --------------------------------------------------------- | ----------------------------- |
 | Back end        | API based on CQRS                                         | .NET 5, ASP.Net Core          |
 | Fron end        | SPA                                                       | React, Type Script, AntDesign |
-| DB              | SQL database for user management and NoSQL for user trips | Azure SQL Database, MongoDB   |
+| DB              | SQL database for user management and NoSQL for user bookings | Azure SQL Database, MongoDB   |
 
 <br/>
 <img src="./Documentation/architecture-diagram.png">
