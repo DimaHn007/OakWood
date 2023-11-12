@@ -88,13 +88,15 @@ Enable users to recover forgotten passwords via email with a secure verification
 <br/>
 <br/>
 
-## **Concurrency patterns usage**
-
 **ER diagram**
 
 <img src="./Documentation/Go & See ER-diagram.png">
 <br/>
 <br/>
+## **Concurrency patterns usage**
+
+
+
 ## **Telemetry**
 
 ## **Storage**
