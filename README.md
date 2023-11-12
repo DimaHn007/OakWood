@@ -100,17 +100,23 @@ Optimistic Concurrency Control:
 
 **Database Schema:**
 Include a version or timestamp field in the reservation table.
+
 **Reservation Retrieval (Client Side):**
 Fetch both the reservation details and the current version or timestamp value when displaying reservation information.
+
 **User Edits (Client Side):**
 When a user wants to modify a reservation, include the original version or timestamp value along with the updated reservation details.
+
 **Server-Side Update:**
 Compare the version or timestamp from the client with the one in the database.
 If they match, proceed with the update; if not, handle the conflict by notifying the user.
+
 **Conflict Resolution (Server Side and User Interface):**
 Notify the user of a conflict and provide options to reload data, reapply changes, or merge changes with the updated reservation details.
+
 **Client Notification:**
 Use user-friendly messages and interface components to inform users of successful updates or conflicts.
+
 **Concurrency Logging:**
 Log concurrency conflicts and resolutions for auditing and analysis.
 
