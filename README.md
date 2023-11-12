@@ -84,7 +84,7 @@ Enable users to recover forgotten passwords via email with a secure verification
 | DB              | SQL database for user management and NoSQL for user reservations | Azure SQL Database, MongoDB   |
 
 <br/>
-<img src="./Documentation/architecture-diagram.png">
+<img src="architecture-diagram.png">
 <br/>
 <br/>
 
