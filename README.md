@@ -75,63 +75,6 @@ The user can create an account and manage it. There will be the next pages for l
 <br/>
 <br/>
 
-Example of _Trip_ document for MongoDB:
-
-```json
-{
-  "id": "00000000-0000-0000-0000-000000000000",
-  "status": 1,
-  "userId": "00000000-0000-0000-0000-000000000000",
-  "name": "string",
-  "description": "string",
-  "startDate": "2021-10-23T17:36:04.432Z",
-  "endDate": "2021-10-23T17:36:04.432Z",
-  "itemsToTake": [
-    {
-      "id": "00000000-0000-0000-0000-000000000000",
-      "name": "string",
-      "isTaken": true
-    }
-  ],
-  "toDoNodes": [
-    {
-      "id": "00000000-0000-0000-0000-000000000000",
-      "name": "string",
-      "description": "string",
-      "type": 1,
-      "date": "2021-10-23T17:36:04.432Z",
-      "status": 1
-    }
-  ]
-}
-```
-
-Example of _TripTemplate_ document for MongoDB:
-
-```json
-{
-  "id": "00000000-0000-0000-0000-000000000000",
-  "name": "string",
-  "itemsToTake": [
-    {
-      "id": "00000000-0000-0000-0000-000000000000",
-      "name": "string",
-      "isTaken": true
-    }
-  ],
-  "toDoNodes": [
-    {
-      "id": "00000000-0000-0000-0000-000000000000",
-      "name": "string",
-      "description": "string",
-      "type": 1,
-      "date": "2021-10-23T17:36:04.432Z",
-      "status": 1
-    }
-  ]
-}
-```
-
 **ER diagram**
 
 <img src="./Documentation/Go & See ER-diagram.png">
