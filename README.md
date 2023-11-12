@@ -43,8 +43,7 @@ The user can create an account and manage it. There will be the next pages for l
 | Table reservation aprove| In the list of items that the user will get after choosing the needed table, he will need to set the date of the reservation, choose hours, book them and get aprove from restaurant
                                                                          |
 | Table reservation canncel| When a user change his plan he can cancel reservation of his table in restaurants 
-                                                                         |
-
+                                                                         
 
 **Use case diagram**
 
