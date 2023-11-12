@@ -138,6 +138,25 @@ Implement a mechanism to release locks automatically after a certain period to h
 **User Interface Feedback:**
 Provide clear indications in the user interface when a reservation is locked by another user to avoid confusion.
 
+Detecting Concurrency Conflicts:
+
+**Database Schema:**
+Ensure that each record in the relevant tables has a version or timestamp field.
+
+**Reservation Retrieval (Client Side):**
+When a user retrieves data for editing or viewing, fetch not only the reservation details but also the current value of the version or timestamp field.
+
+**User Edits (Client Side):**
+When the user makes changes to a reservation and submits them for an update, include the original version or timestamp value along with the updated reservation details.
+**Server-Side Update:**
+Upon receiving an update request, compare the version or timestamp from the client with the one in the database.
+If they match, it means no other user has modified the record since the user loaded the data. Proceed with the update.
+If there's a mismatch, handle the conflict by notifying the user.
+
+**Conflict Handling (Server Side):**
+Notify the user about the conflict and provide options for resolution.
+Options may include reloading the data and reapplying their changes or merging their changes with the updated data.
+
 ## **Telemetry**
 
 ## **Storage**
