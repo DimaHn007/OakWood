@@ -120,6 +120,24 @@ Use user-friendly messages and interface components to inform users of successfu
 **Concurrency Logging:**
 Log concurrency conflicts and resolutions for auditing and analysis.
 
+Pessimistic Concurrency Control:
+
+**Database Schema:**
+Include a lock_status field in the reservation table to indicate whether a reservation is currently locked by a user.
+
+**Reservation Locking (Server Side):**
+When a user starts editing a reservation, set the lock_status to "locked" in the database to prevent other users from editing the same reservation concurrently.
+If the reservation is already locked, notify the user attempting to edit that the reservation is currently being edited by another user.
+
+**Reservation Unlocking (Server Side):**
+When the user finishes editing or cancels the reservation update, unlock the reservation by setting the lock_status to "unlocked."
+
+**Timeouts and Release Mechanism:**
+Implement a mechanism to release locks automatically after a certain period to handle cases where a user might close the browser or navigate away without explicitly unlocking.
+
+**User Interface Feedback:**
+Provide clear indications in the user interface when a reservation is locked by another user to avoid confusion.
+
 ## **Telemetry**
 
 ## **Storage**
