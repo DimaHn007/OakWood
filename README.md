@@ -80,7 +80,7 @@ Enable users to recover forgotten passwords via email with a secure verification
 | --------------- | --------------------------------------------------------- | ----------------------------- |
 | Back end        | API based on CQRS                                         | .NET 5, ASP.Net Core          |
 | Fron end        | SPA                                                       | React, Type Script, AntDesign |
-| DB              | SQL database for user management and NoSQL for user bookings | Azure SQL Database, MongoDB   |
+| DB              | SQL database for user management and NoSQL for user reservations | Azure SQL Database, MongoDB   |
 
 <br/>
 <img src="./Documentation/architecture-diagram.png">
