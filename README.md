@@ -43,6 +43,19 @@ The user can create an account and manage it. There will be the next pages for l
 | Table reservation aprove| In the list of items that the user will get after choosing the needed table, he will need to set the date of the reservation, choose hours, book them and get aprove from restaurant                                                                                                            |  
 | Table reservation canncel | When a user change his plan he can cancel reservation of his table in restaurants                
 
+**Identity Management**
+
+Identity Management in our restaurant reservation web application is a key aspect that ensures user security and personalization. Below is a description of the functionality and features associated with the identity management system:
+
+Registration and Login:
+The application allows users to create accounts by entering basic information (name, email, password). Upon registration, each user will be assigned a unique identifier. Password must be at least 8 characters long, including at least one uppercase and lowercase letter and one number. Email verification when registering with an email address that is already in use.
+
+User profile:
+After registration, users can add and modify information in their profile, such as contact information, food preferences, or other personalized information.
+
+Password Recovery:
+Enable users to recover forgotten passwords via email with a secure verification mechanism.
+
 
 **Use case diagram**
 
