@@ -25,7 +25,7 @@ This web application is for reserving tables in restaurants in advance and right
 
 ### **Functional description**
 
-The user can create an account and manage it. There will be the next pages for logged-in users: _My profile_ and _Reservations_. On the _Restaurants_ page user can list of trips divided into three stages:
+The user can create an account and manage it. There will be the next pages for logged-in users: _My profile_ and _Reservations_ and the _Restaurants_ page :
 
 - reserved
 - restaurants
