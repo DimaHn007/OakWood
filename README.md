@@ -5,6 +5,7 @@
 - [Team](#team)
 - [Description](#project-description)
 - [Architecture](#architecture)
+- [Concurrency patterns usage](#monitoring)
 - [Storage](#storage)
 - [Resiliency model](#resiliency-model)
 - [Security model](#security-model)
@@ -92,6 +93,7 @@ Enable users to recover forgotten passwords via email with a secure verification
 <img src="./Documentation/Go & See ER-diagram.png">
 <br/>
 <br/>
+## **Telemetry**
 
 ## **Storage**
 
