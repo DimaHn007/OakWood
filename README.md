@@ -85,7 +85,6 @@ Registration and Login:
 
 User profile:
 - Changing and updating personal data in the profile.
-- Add and change preferences for type of cuisine, allergies, etc.
 
 Reservation of Tables:
 - Choice of restaurant, date and time for booking.
