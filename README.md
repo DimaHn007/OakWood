@@ -75,6 +75,53 @@ After registration, users can add and modify information in their profile, such 
 Password Recovery:
 Enable users to recover forgotten passwords via email with a secure verification mechanism.
 
+## **Functional requirements**
+
+**Role: Client**
+Registration and Login:
+- Ability to register a new account.
+- Authorization by e-mail.
+
+User profile:
+- Changing and updating personal data in the profile.
+- Add and change preferences for type of cuisine, allergies, etc.
+
+Reservation of Tables:
+- Choice of restaurant, date and time for booking.
+- Selection of the number of guests.
+- View the history of your reservations and their cancellations.
+- Receipt of booking confirmation via e-mail.
+
+Ratings and Reviews:
+- Leave reviews and ratings for restaurants visited by the user.
+
+Notification:
+- Receiving notifications about promotions and news from the selected restaurant.
+
+
+**Role: Administrator**
+Management of Restaurants:
+- Adding new restaurants and editing them.
+- Indication of working hours, type of cuisine and other information.
+
+Management of Reservations:
+- View and manage all bookings.
+- Confirmation or cancellation of reservations.
+
+Statistics and Analytics:
+- View statistics on the popularity of restaurants.
+- Analysis of user reviews and ratings.
+
+Management of Promotions and Discounts:
+- Adding and editing promotions and discounts for restaurants.
+
+User Management System:
+- Providing the ability to block or edit user accounts in cases of violations.
+
+Reporting:
+- Preparation of reports on the operation of restaurants and the effectiveness of the application.
+
+
 ## **Architecture**
 
 | Part of project | Description                                               | Technologies                  |
