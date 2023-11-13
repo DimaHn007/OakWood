@@ -78,6 +78,7 @@ Enable users to recover forgotten passwords via email with a secure verification
 ## **Functional requirements**
 
 **Role: Client**
+<br/>
 Registration and Login:
 - Ability to register a new account.
 - Authorization by e-mail.
