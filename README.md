@@ -93,13 +93,6 @@ Reservation of Tables:
 - View the history of your reservations and their cancellations.
 - Receipt of booking confirmation via e-mail.
 
-Ratings and Reviews:
-- Leave reviews and ratings for restaurants visited by the user.
-
-Notification:
-- Receiving notifications about promotions and news from the selected restaurant.
-
-
 **Role: Administrator**
 <br/>
 Management of Restaurants:
@@ -114,14 +107,8 @@ Statistics and Analytics:
 - View statistics on the popularity of restaurants.
 - Analysis of user reviews and ratings.
 
-Management of Promotions and Discounts:
-- Adding and editing promotions and discounts for restaurants.
-
 User Management System:
 - Providing the ability to block or edit user accounts in cases of violations.
-
-Reporting:
-- Preparation of reports on the operation of restaurants and the effectiveness of the application.
 
 
 ## **Architecture**
