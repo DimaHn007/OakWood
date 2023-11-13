@@ -101,6 +101,7 @@ Notification:
 
 
 **Role: Administrator**
+<br/>
 Management of Restaurants:
 - Adding new restaurants and editing them.
 - Indication of working hours, type of cuisine and other information.
