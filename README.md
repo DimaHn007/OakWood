@@ -123,6 +123,8 @@ User Management System:
 <br/>
 <br/>
 
+<img src="architecture(2).png">
+
 **ER diagram:**
 
 ```sql
