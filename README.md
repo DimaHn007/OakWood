@@ -127,8 +127,7 @@ User Management System:
 
 **ER diagram:**
 
-```sql
-{
+```
 
 +----------------+       +-------------------+       +-------------------------+
 |    User        |       |   Reservation    |       |      Restaurant         |
@@ -148,7 +147,6 @@ User Management System:
                                                      | Status                  |
                                                      | ...                     |
                                                      +-------------------------+
-}
 ```
 ## **Concurrency patterns usage**
 
