@@ -58,7 +58,7 @@ The user can create an account and manage it. There will be the next pages for l
 
 **User sequence diagram**
 
-<img src="./Documentation/user-sequence-diagram.png">
+<img src="user-sequence-diagram.png">
 <br/>
 <br/>
 
