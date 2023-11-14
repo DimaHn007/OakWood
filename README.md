@@ -123,11 +123,32 @@ User Management System:
 <br/>
 <br/>
 
-**ER diagram**
+```
 
-<img src="./Documentation/Go & See ER-diagram.png">
-<br/>
-<br/>
+**ER diagram:**
+
+```sql
+{
+
++----------------+       +-------------------+       +-------------------------+
+|    User        |       |   Reservation    |       |      Restaurant         |
++----------------+       +-------------------+       +-------------------------+
+| UserId (PK)    |1      *| ReservationId (PK)|       | RestaurantId (PK)      |
+| FirstName      |-------<| UserId (FK)      |       | Name                    |
+| LastName       |       | TableId (FK)     |       | Location                |
+| Email          |       | ReservationTime  |       | Capacity                |
+| PasswordHash   |       | Status           |       | ...                     |
+| ...            |       +-------------------+       +-------------------------+
++----------------+                                   |         Table           |
+                                                     +-------------------------+
+                                                     | TableId (PK)            |
+                                                     | RestaurantId (FK)      |
+                                                     | Number                  |
+                                                     | Capacity               |
+                                                     | Status                  |
+                                                     | ...                     |
+                                                     +-------------------------+
+}
 
 ## **Concurrency patterns usage**
 
