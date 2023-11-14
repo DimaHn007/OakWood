@@ -123,7 +123,8 @@ User Management System:
 <br/>
 <br/>
 
-<img src="architecture(2).png">
+<img src="architecture (2).png">
+<br/>
 
 **ER diagram:**
 
