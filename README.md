@@ -52,7 +52,7 @@ The user can create an account and manage it. There will be the next pages for l
 
 **Guest sequence diagram**
 
-<img src="./Documentation/guest-sequence-diagram.png">
+<img src="guest-sequence-diagram.png">
 <br/>
 <br/>
 
