@@ -149,7 +149,7 @@ User Management System:
                                                      | ...                     |
                                                      +-------------------------+
 }
-
+```
 ## **Concurrency patterns usage**
 
 Optimistic Concurrency Control:
