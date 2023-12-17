@@ -9,7 +9,7 @@
 - [Analytics model](#Analytics-model)
 - [Data model](#Data-model)
 - [Deployment Model](#Deployment-Model)
-- [Monitoring & Alerting Model](#monitoring-&-alerting-model)
+- [Monitoring & Alerting Model](#monitoring--alerting-model)
 - [Resiliency model](#resiliency-model)
 - [Security model](#security-model)
 - [Hosted Service](#hosted-service)
