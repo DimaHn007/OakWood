@@ -296,6 +296,7 @@ Options may include reloading the data and reapplying their changes or merging t
                           +--------------+
 }
 ```
+
 ## **Monitoring & Alerting Model**
 
 | Mетрикa | Вимір | Min-Max значення | Як збиратиметься | Критичність | Mitigation plan |
