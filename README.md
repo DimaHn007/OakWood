@@ -6,7 +6,7 @@
 - [Description](#project-description)
 - [Architecture](#architecture)
 - [Concurrency patterns usage](#concurrency-patterns-usage)
-- [Analytics model](#Analyticsmodel)
+- [Analytics model](#Analytics-model)
 - [Storage](#storage)
 - [Resiliency model](#resiliency-model)
 - [Security model](#security-model)
