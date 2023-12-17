@@ -298,6 +298,7 @@ Options may include reloading the data and reapplying their changes or merging t
 ```
 
 ## **Monitoring & Alerting Model**
+
 | Mетрикa | Вимір | Min-Max значення | Як збиратиметься | Критичність | Mitigation plan |
 | --- | --- | --- | --- | --- | --- |
 | CPU usage | %	0% - 100% | Amazon CloudWatch | Medium | Vertical autoscaling |
@@ -321,5 +322,3 @@ Options may include reloading the data and reapplying their changes or merging t
 ## **Telemetry**
 
 Local application insights
-
-## **Monitoring**
