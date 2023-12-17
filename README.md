@@ -6,11 +6,11 @@
 - [Description](#project-description)
 - [Architecture](#architecture)
 - [Concurrency patterns usage](#concurrency-patterns-usage)
+- [Analytics model](#Analyticsmodel)
 - [Storage](#storage)
 - [Resiliency model](#resiliency-model)
 - [Security model](#security-model)
 - [Hosted Service](#hosted-service)
-- [Telemetry](#telemetry)
 - [Monitoring](#monitoring)
 
 ## **Team**
@@ -213,7 +213,7 @@ If there's a mismatch, handle the conflict by notifying the user.
 Notify the user about the conflict and provide options for resolution.
 Options may include reloading the data and reapplying their changes or merging their changes with the updated data.
 
-## **Telemetry**
+## **Analytics model**
 
 ## **Storage**
 
