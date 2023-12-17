@@ -299,18 +299,7 @@ Options may include reloading the data and reapplying their changes or merging t
 
 ## **Monitoring & Alerting Model**
 
-| Mетрикa | Вимір | Min-Max значення | Як збиратиметься | Критичність | Mitigation plan |
-| --- | --- | --- | --- | --- | --- |
-| CPU usage | %	0% - 100% | Amazon CloudWatch | Medium | Vertical autoscaling |
-| Memory usage | MB | 0MB - 16384MB | Amazon CloudWatch | Medium | Vertical autoscaling |
-| Error rates (percentage of the failed requests) | % | 0% - 100% | AWS Elastic Beanstalk | High | Auto restart the app, investigate if the problem persists |
-| App availability | ms | 0ms + | Amazon CloudWatch | High | Auto restart the app, investigate if the problem persists |
-| Database connection timeout | ms | 0ms - 2000ms | Amazon CloudWatch | High | Vertical autoscaling of the DB instances |
-| Requests per minute | Number | 0+ | AWS Elastic Beanstalk | Medium | -  | 
-| Average response time | ms | 0ms - 200000ms | Amazon CloudWatch | Medium | Horizontal autoscaling |
-| Max Network In / Out | MB | 0MB - 10MB | Amazon CloudWatch | Medium | -  | 
-| App startup time | ms | 0ms - 800000ms | Amazon CloudWatch | Low | - |
-| Active sessions | Number | 0 - 500 | Amazon CloudWatch | Low | -  |
+
 
 
 ## **Resiliency Model**
