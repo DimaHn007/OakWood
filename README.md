@@ -7,7 +7,7 @@
 - [Architecture](#architecture)
 - [Concurrency patterns usage](#concurrency-patterns-usage)
 - [Analytics model](#Analytics-model)
-- [Storage](#storage)
+- [Data model](#Data-model)
 - [Resiliency model](#resiliency-model)
 - [Security model](#security-model)
 - [Hosted Service](#hosted-service)
@@ -216,8 +216,45 @@ Options may include reloading the data and reapplying their changes or merging t
 ## **Analytics model**
 <img src="analytics model.png">
 
+## **Data model**
+**Entities description**
+User <=> Reservation: A user can have many reservations, but each reservation belongs to only one user. The relationship between a user and his reservations is determined by the UserId field in the Reservation table, which references the UserId in the User table.
 
-## **Storage**
+User <=> Table: The user can book tables. This happens through reservations, where the TableId field refers to the corresponding TableId in the Table table.
+
+Reservation <=> Table: Each reservation is associated with one specific table through the TableId field in the Reservation table, which points to the corresponding TableId in the Table table.
+
+Restaurant <=> Table: Each table is located in a certain restaurant through the RestaurantId field in the Table table, which refers to the corresponding RestaurantId in the Restaurant table.
+
+User
+UserId – a person's ID (PK)
+FirstName – person's first name
+LastName – person's last name
+Email – person’s email
+PasswordHash – hash password
+
+Reservation
+ReservationId – a reservation's ID (PK)
+UserId – a person's ID (FK)
+TableId – table's ID
+ReservationTime – reservation time
+Status – status of dish
+
+Restautant
+RestaurantId – restaurant’s ID (PK)
+Name – restaurant’s name
+Location – restaurant’s address
+Capacity – restaurant’s capacity
+info_contact – restaurant’s contact information
+
+Table
+TableId – a table’s ID (PK)
+RestaurantId – a reservation's ID (FK)
+Number – number of table
+Capacity – table capacity
+Status – table status
+
+
 
 ## **Resiliency Model**
 
