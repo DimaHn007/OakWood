@@ -371,14 +371,14 @@ Auth App - LNU Database
 Resiliency Model (Rate)
 | No               | Effects | Portion | Affected | Detection | Resolution | Likelihood | Rate                                                                                                                                                                                                                                                                                           |
 | --------------- | --------------------------------------------------------- | ----------------------------- |
-1	No noticeable effect	< 2%	< 5 minutes	5 min - 45 min	< Once a year	4
-2	Major impairment or data loss	> 50%	5 min - 15 min	5 min - 45 min	> Once a year	96
-3	Major impairment or data loss	> 50%	5 min - 15 min	5 min - 45 min	> Once a year	96
-4	No noticeable effect	< 2%	< 5 minutes	< 5 minutes	> Once a month	4
-5	No noticeable effect	< 2%	< 5 minutes	< 5 minutes	> Once a month	4
-6	Major impairment	> 50%	< 5 minutes	5 min - 45 min	> Once a year	96
-7	Major impairment	> 50%	< 5 minutes	5 min - 45 min	> Once a year	96
-8	No noticeable effect	< 2%	< 5 minutes	< 5 minutes	> Once a year	20
+|1	|No noticeable effect	|< 2%	|< 5 minutes	|5 min - 45 min	|< Once a year	|4|
+|2	|Major impairment or data loss	|> 50%	|5 min - 15 min	|5 min - 45 min	> |Once a year	|96|
+|3	|Major impairment or data loss	|> 50%	|5 min - 15 min	|5 min - 45 min	> |Once a year|	|96|
+|4	|No noticeable effect	|< 2%	|< 5 minutes	|< 5 minutes	> |Once a month|	|4|
+|5	|No noticeable effect	|< 2%	|< 5 minutes	|< 5 minutes	> |Once a month	|4|
+|6	|Major impairment	|> 50%	|< 5 minutes |5 min - 45 min	> |Once a year	|96|
+|7	|Major impairment	|> 50%	|< 5 minutes	|5 min - 45 min	> |Once a year	|96|
+|8	|No noticeable effect	|< 2%	|< 5 minutes	|< 5 minutes	> |Once a year	|20|
 
 ## **Security Model**
 
