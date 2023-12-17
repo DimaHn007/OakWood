@@ -299,10 +299,85 @@ Options may include reloading the data and reapplying their changes or merging t
 
 ## **Monitoring & Alerting Model**
 
-
-
-
 ## **Resiliency Model**
+**Component Interaction Diagram**
+Interaction Model
+User - Web Application
+All user interactions with the web application, including sign-up, log-in, profile management, table reservations, and cancellations.
+
+Components - Services
+Components use services to connect with the backend for various functionalities.
+
+User Service - Authentication Service
+User service connects with the authentication service to handle user authentication.
+
+User Service - Core App
+User service connects with the core app to handle user interactions, such as adding, editing, and deleting reservations.
+
+All Crucial Services - LNU App
+All services use the LNU app module to handle creations, editing, or deletions.
+
+Core App - Database
+Core app connects to the database to perform user edits and handle reservation data.
+
+LNU App - Database
+LNU app connects to the database to perform actions related to specific objects.
+
+Authentication App - Database
+Authentication app connects to the database to create a user and perform authentication.
+
+Resiliency Model (Discover)
+
+User - Components
+        Failure Short Name: SSL certificate error
+        Failure Description: Browser cannot verify SSL certificates.
+        Response: Browser blocks the website, warning the user about trust issues.
+
+User Service - Core App
+        Failure Short Name: Service unreachable
+        Failure Description: Core app can't reach service due to connection loss or shutdown.
+        Response: Requests requiring UserService won't be handled.
+
+Services - LNU App
+        Failure Short Name: Service unreachable
+        Failure Description: LNU app can't reach service due to connection loss or shutdown.
+        Response: Requests requiring any service won't be handled.
+
+User Service - Auth App
+        Failure Short Name: Bad auth: Authentication
+        Failure Description: Incorrect credentials entered.
+        Response: User is not logged in.
+
+Components - Services
+        Failure Short Name: LNU credentials expire
+        Failure Description: Connection with LNU fails if credentials expire.
+        Response: API Gateway can't proceed with the request, impacting communication.
+
+LNU App - LNU Database
+        Failure Short Name: No space left on disk
+        Failure Description: Unable to create new events due to insufficient memory.
+        Response: Errors for any create event request; reading events work as usual.
+
+Core App - LNU Database
+        Failure Short Name: Database unreachable
+        Failure Description: Loss of DB access due to connectivity issues.
+        Response: Service can't write new changes to DB but can handle read requests with precached info.
+
+Auth App - LNU Database
+        Failure Short Name: No space left on disk
+        Failure Description: Unable to create new users.
+        Response: Errors for creating users.
+
+Resiliency Model (Rate)
+No	Effects	Portion Affected	Detection	Resolution	Likelihood	Rate
+1	No noticeable effect	< 2%	< 5 minutes	5 min - 45 min	< Once a year	4
+2	Major impairment or data loss	> 50%	5 min - 15 min	5 min - 45 min	> Once a year	96
+3	Major impairment or data loss	> 50%	5 min - 15 min	5 min - 45 min	> Once a year	96
+4	No noticeable effect	< 2%	< 5 minutes	< 5 minutes	> Once a month	4
+5	No noticeable effect	< 2%	< 5 minutes	< 5 minutes	> Once a month	4
+6	Major impairment	> 50%	< 5 minutes	5 min - 45 min	> Once a year	96
+7	Major impairment	> 50%	< 5 minutes	5 min - 45 min	> Once a year	96
+8	No noticeable effect	< 2%	< 5 minutes	< 5 minutes	> Once a year	20
 
 ## **Security Model**
 
