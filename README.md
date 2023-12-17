@@ -370,7 +370,7 @@ Auth App - LNU Database
 
 Resiliency Model (Rate)
 | No               | Effects | Portion | Affected | Detection | Resolution | Likelihood | Rate                                                                                                                                                                                                                                                                                           |
-| --------------- | --------------------------------------------------------- | ----------------------------- |
+| -|---------------------------------- | --------|----------------|-----------|---------------------- | ----------------------------- |
 |1	|No noticeable effect	|< 2%	|< 5 minutes	|5 min - 45 min	|< Once a year	|4|
 |2	|Major impairment or data loss	|> 50%	|5 min - 15 min	|5 min - 45 min	> |Once a year	|96|
 |3	|Major impairment or data loss	|> 50%	|5 min - 15 min	|5 min - 45 min	> |Once a year|	|96|
