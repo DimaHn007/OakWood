@@ -214,6 +214,8 @@ Notify the user about the conflict and provide options for resolution.
 Options may include reloading the data and reapplying their changes or merging their changes with the updated data.
 
 ## **Analytics model**
+<img src="analytics model.png">
+
 
 ## **Storage**
 
