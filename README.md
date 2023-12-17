@@ -9,7 +9,7 @@
 - [Analytics model](#Analytics-model)
 - [Data model](#Data-model)
 - [Deployment Model](#Deployment-Model)
-- [Monitoring & Alerting Model](#Monitoring-&-Alerting-Model)
+- [Monitoring & Alerting Model](#monitoring-&-alerting-model)
 - [Resiliency model](#resiliency-model)
 - [Security model](#security-model)
 - [Hosted Service](#hosted-service)
@@ -298,7 +298,6 @@ Options may include reloading the data and reapplying their changes or merging t
 ```
 
 ## **Monitoring & Alerting Model**
-
 | Mетрикa | Вимір | Min-Max значення | Як збиратиметься | Критичність | Mitigation plan |
 | --- | --- | --- | --- | --- | --- |
 | CPU usage | %	0% - 100% | Amazon CloudWatch | Medium | Vertical autoscaling |
