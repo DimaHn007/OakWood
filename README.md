@@ -367,8 +367,7 @@ Auth App - LNU Database
         Failure Short Name: No space left on disk
         Failure Description: Unable to create new users.
         Response: Errors for creating users.
-
-Resiliency Model (Rate)
+## **Resiliency Model (Rate)**
 | No  | Effects                               | Portion Affected             | Detection        | Resolution                | Likelihood                         | Rate|
 |---- |-------------------------------------- | ------------- |----------------- |-------------------------- | ---------------------------------- |---- |
 |1	|No noticeable effect	|< 2%	|< 5 minutes	|5 min - 45 min	|< Once a year	|4|
