@@ -380,6 +380,8 @@ Auth App - LNU Database
 |8	|No noticeable effect	|< 2%	|< 5 minutes	|< 5 minutes	|> Once a year	|20|
 
 ## **Deployment Model Diagram**
+
+```sql
 +-----------------+        +-----------------+        +-----------------+
 |   Client-side   |        |   Web Server    |        |   Additional    |
 |                 |        |                 |        |   Services      |
