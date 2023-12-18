@@ -386,96 +386,79 @@ Auth App - LNU Database
 
 <br/>
 User Authentication:
-
 -Users must authenticate using secure methods, such as email and password. Implement strong password policies, including minimum length and complexity requirements. Consider multi-factor authentication for an added layer of security.
 
 <br/>
 Session Management:
-
 -Use secure session management techniques to prevent session hijacking. Implement session timeouts to automatically log out inactive users.
 
 <br/>
 Authorization:
-
 -Employ role-based access control (RBAC) to restrict access based on user roles (e.g., client, administrator). Ensure that users only have access to the functionalities and data relevant to their roles.
 
 **Data Security**
 
 <br/>
 Data Encryption:
-
 -Use HTTPS to encrypt data in transit between the client and the server. Employ encryption mechanisms (e.g., TLS) to secure communication channels.
 
 <br/>
 Password Storage:
-
 -Store passwords securely using strong, one-way encryption algorithms (e.g., bcrypt). Avoid storing plaintext passwords in the database.
 
 <br/>
 Data Integrity:
-
 -Implement data integrity checks to detect and prevent unauthorized modifications to data. Use hashing algorithms to verify data integrity.
 
 **Secure Development Practices**
 
 <br/>
 Code Review:
-
 -Conduct regular code reviews to identify and address security vulnerabilities. Follow secure coding practices and guidelines.
 
 <br/>
 Input Validation:
-
 -Validate and sanitize all user inputs to prevent common security issues such as SQL injection and cross-site scripting (XSS).
 
 <br/>
 Security Libraries and Frameworks:
-
 -Utilize reputable security libraries and frameworks to handle authentication, authorization, and other security-related tasks.
 
 **Infrastructure Security**
 
 <br/>
 Server Security:
-
 -Regularly update and patch server software to address known vulnerabilities. Implement proper server hardening measures, including firewall configurations.
 
 <br/>
 Database Security:
-
 -Apply the principle of least privilege to database accounts. Regularly backup and encrypt sensitive data stored in the database.
 
 **Monitoring and Incident Response**
 <br/>
 Logging:
-
 -Implement comprehensive logging for user activities, authentication attempts, and system events. Regularly review and analyze logs to detect unusual activities.
 <br/>
 Incident Response Plan:
-
 -Develop an incident response plan outlining steps to take in case of a security incident. Conduct regular drills and updates to ensure the effectiveness of the plan.
 
 **Third-Party Integrations**
 
 <br/>
 Third-Party Security:
-
 -Evaluate and vet third-party services and integrations for security risks. Only use reputable and well-maintained third-party libraries and APIs.
 
 **User Education and Awareness**
 <br/>
 User Training:
-
 -Educate users about security best practices, such as choosing strong passwords and recognizing phishing attempts. Provide clear guidelines on how to report security concerns or incidents.
 <br/>
 Privacy Policies:
-
 -Clearly communicate privacy policies to users, detailing how their data will be used, stored, and protected.
 
 **Compliance**
 <br/>
 Regulatory Compliance:
-
 -Ensure compliance with relevant data protection regulations and standards. Regularly review and update security practices to align with changing compliance requirements.
 
 
