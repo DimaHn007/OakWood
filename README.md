@@ -382,6 +382,104 @@ Auth App - LNU Database
 
 ## **Security Model**
 
+**Authentication and Authorization**
+
+User Authentication:
+
+Users must authenticate using secure methods, such as email and password.
+Implement strong password policies, including minimum length and complexity requirements.
+Consider multi-factor authentication for an added layer of security.
+
+Session Management:
+
+Use secure session management techniques to prevent session hijacking.
+Implement session timeouts to automatically log out inactive users.
+
+Authorization:
+
+Employ role-based access control (RBAC) to restrict access based on user roles (e.g., client, administrator).
+Ensure that users only have access to the functionalities and data relevant to their roles.
+
+**Data Security**
+
+Data Encryption:
+
+Use HTTPS to encrypt data in transit between the client and the server.
+Employ encryption mechanisms (e.g., TLS) to secure communication channels.
+
+Password Storage:
+
+Store passwords securely using strong, one-way encryption algorithms (e.g., bcrypt).
+Avoid storing plaintext passwords in the database.
+
+Data Integrity:
+
+Implement data integrity checks to detect and prevent unauthorized modifications to data.
+Use hashing algorithms to verify data integrity.
+
+**Secure Development Practices**
+
+Code Review:
+
+Conduct regular code reviews to identify and address security vulnerabilities.
+Follow secure coding practices and guidelines.
+
+Input Validation:
+
+Validate and sanitize all user inputs to prevent common security issues such as SQL injection and cross-site scripting (XSS).
+
+Security Libraries and Frameworks:
+
+Utilize reputable security libraries and frameworks to handle authentication, authorization, and other security-related tasks.
+
+**Infrastructure Security**
+Server Security:
+
+Regularly update and patch server software to address known vulnerabilities.
+Implement proper server hardening measures, including firewall configurations.
+
+Database Security:
+
+Apply the principle of least privilege to database accounts.
+Regularly backup and encrypt sensitive data stored in the database.
+
+**Monitoring and Incident Response**
+Logging:
+
+Implement comprehensive logging for user activities, authentication attempts, and system events.
+Regularly review and analyze logs to detect unusual activities.
+
+Incident Response Plan:
+
+Develop an incident response plan outlining steps to take in case of a security incident.
+Conduct regular drills and updates to ensure the effectiveness of the plan.
+
+**Third-Party Integrations**
+
+Third-Party Security:
+
+Evaluate and vet third-party services and integrations for security risks.
+Only use reputable and well-maintained third-party libraries and APIs.
+
+**User Education and Awareness**
+
+User Training:
+
+Educate users about security best practices, such as choosing strong passwords and recognizing phishing attempts.
+Provide clear guidelines on how to report security concerns or incidents.
+
+Privacy Policies:
+
+Clearly communicate privacy policies to users, detailing how their data will be used, stored, and protected.
+
+**Compliance**
+
+Regulatory Compliance:
+Ensure compliance with relevant data protection regulations and standards.
+Regularly review and update security practices to align with changing compliance requirements.
+
+This Security Model provides a foundation for securing the "Book a Table" application, emphasizing a holistic approach to address potential threats and vulnerabilities throughout the development and operation lifecycle. Regular security audits and assessments are crucial to maintaining the security posture of the application.
+
 ## **Hosted Service**
 
 ## **Telemetry**
