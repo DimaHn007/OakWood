@@ -379,39 +379,6 @@ Auth App - LNU Database
 |7	|Major impairment	|> 50%	|< 5 minutes	|5 min - 45 min	|> Once a year	|96|
 |8	|No noticeable effect	|< 2%	|< 5 minutes	|< 5 minutes	|> Once a year	|20|
 
-## **Deployment Model Diagram**
-
-```sql
-+-----------------+        +-----------------+        +-----------------+
-|   Client-side   |        |   Web Server    |        |   Additional    |
-|                 |        |                 |        |   Services      |
-+------+----------+        +------+----------+        +-------+---------+
-       |                         |                         |
-       |                         | HTTP/HTTPS              |
-       |                         |                         |
-       |                         v                         v
-       |                  +--------------+          +-----------------+
-       |                  | Business     |          |   Database      |
-       |                  | Logic (API)  |          |                 |
-       |                  +------+-------+          +-----------------+
-       |                         |
-       |                         | SQL/NoSQL
-       |                         |
-       |                         v
-       |                  +--------------+
-       |                  | Booking      |
-       |                  | System       |
-       |                  +------+-------+
-       |                         |
-       |                         | CRUD Operations
-       |                         |
-       |                         v
-       |                  +--------------+
-       +----------------->|   Management |
-                          |   System     |
-                          |              |
-                          +--------------+
-
 
 ## **Security Model**
 
