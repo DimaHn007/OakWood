@@ -452,7 +452,7 @@ Auth App - LNU Database
 
 ## **Compliance**
 
-**Regulatory Compliance:**
+Regulatory Compliance:
 -Ensure compliance with relevant data protection regulations and standards. Regularly review and update security practices to align with changing compliance requirements.
 
 
