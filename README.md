@@ -384,7 +384,6 @@ Auth App - LNU Database
 
 ## **Authentication and Authorization**
 
-<br/>
 ## **User Authentication:**
 -Users must authenticate using secure methods, such as email and password. Implement strong password policies, including minimum length and complexity requirements. Consider multi-factor authentication for an added layer of security.
 
@@ -398,7 +397,6 @@ Auth App - LNU Database
 
 ## **Data Security**
 
-<br/>
 ## **Data Encryption:**
 -Use HTTPS to encrypt data in transit between the client and the server. Employ encryption mechanisms (e.g., TLS) to secure communication channels.
 
@@ -411,7 +409,6 @@ Auth App - LNU Database
 
 ## **Secure Development Practices**
 
-<br/>
 ## **Code Review:**
 -Conduct regular code reviews to identify and address security vulnerabilities. Follow secure coding practices and guidelines.
 
@@ -424,7 +421,7 @@ Auth App - LNU Database
 
 ## **Infrastructure Security**
 
-<br/>
+
 ## **Server Security:**
 -Regularly update and patch server software to address known vulnerabilities. Implement proper server hardening measures, including firewall configurations.
 
@@ -433,7 +430,6 @@ Auth App - LNU Database
 -Apply the principle of least privilege to database accounts. Regularly backup and encrypt sensitive data stored in the database.
 
 ## **Monitoring and Incident Response**
-<br/>
 ## **Logging:**
 -Implement comprehensive logging for user activities, authentication attempts, and system events. Regularly review and analyze logs to detect unusual activities.
 
@@ -442,20 +438,20 @@ Auth App - LNU Database
 
 ## **Third-Party Integrations**
 
-<br/>
+
 ## **Third-Party Security:**
 -Evaluate and vet third-party services and integrations for security risks. Only use reputable and well-maintained third-party libraries and APIs.
 
 ## **User Education and Awareness**
-<br/>
+
 ## **User Training:**
 -Educate users about security best practices, such as choosing strong passwords and recognizing phishing attempts. Provide clear guidelines on how to report security concerns or incidents.
-<br/>
+
 ## **Privacy Policies:**
 -Clearly communicate privacy policies to users, detailing how their data will be used, stored, and protected.
 
 ## **Compliance**
-<br/>
+
 ## **Regulatory Compliance:**
 -Ensure compliance with relevant data protection regulations and standards. Regularly review and update security practices to align with changing compliance requirements.
 
