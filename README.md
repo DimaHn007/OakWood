@@ -287,6 +287,7 @@ Our services are intended for individuals above the age of 16 who can consent to
 
 ## **Deployment Model**
 <img src="Dmodel.png">
+
 **This diagram outlines the deployment model for your table reservation system:**
 
 - Development & Testing Environments: Using .NET 5, ASP.NET Core for backend development, React, TypeScript, and AntDesign for frontend development.
