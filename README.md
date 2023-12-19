@@ -11,7 +11,6 @@
 - [Resiliency model](#resiliency-model)
 - [Deployment Model](#Deployment-Model)
 - [Security model](#security-model)
-- [Hosted Service](#hosted-service)
 - [Monitoring & Alerting Model](#monitoring--alerting-model)
 
 ## **Team**
