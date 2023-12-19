@@ -7,13 +7,13 @@
 - [Architecture](#architecture)
 - [Concurrency patterns usage](#concurrency-patterns-usage)
 - [Analytics model](#Analytics-model)
+  
 - [Data model](#Data-model)
-- [Deployment Model](#Deployment-Model)
-- [Monitoring & Alerting Model](#monitoring--alerting-model)
 - [Resiliency model](#resiliency-model)
+- [Deployment Model](#Deployment-Model)
 - [Security model](#security-model)
 - [Hosted Service](#hosted-service)
-- [Monitoring](#monitoring)
+- [Monitoring & Alerting Model](#monitoring--alerting-model)
 
 ## **Team**
 
