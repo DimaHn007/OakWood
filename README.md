@@ -9,8 +9,8 @@
 - [Analytics model](#Analytics-model)
 - [Data model](#Data-model)
 - [Resiliency model](#resiliency-model)
-- [Deployment Model](#Deployment-Model)
 - [Security model](#security-model)
+- [Deployment Model](#Deployment-Model)
 - [Monitoring & Alerting Model](#monitoring--alerting-model)
 
 ## **Team**
