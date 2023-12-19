@@ -259,8 +259,8 @@ Options may include reloading the data and reapplying their changes or merging t
 - Capacity – table capacity
 - Status – table status
 
-**Data Retention Policy** <br/>
-This policy outlines how our table reservation service handles and retains user data. <br/>
+## **Data Retention Policy** <br/>
+  This policy outlines how our table reservation service handles and retains user data. <br/>
 **Types of Information Collected** <br/>
 - Information Provided by Users: To facilitate table reservations, users are required to provide personal details including their full name, email, and password during registration.
 - Reservation Data: Information regarding the reservations made, including choice of restaurant, date, time, number of guests, and reservation status.
