@@ -286,48 +286,13 @@ Administrators have the authority to manage restaurant information, view and man
 Our services are intended for individuals above the age of 16 who can consent to personal data processing in their country. In some instances, parental or guardian consent might be required for minors.
 
 ## **Deployment Model**
-```sql
-{
-+-----------------+        +-----------------+        +-----------------+
-|   Клієнтська    |        |   Веб-сервер    |        |   Додаткові     |
-|    сторона      |        |                 |        |    сервіси      |
-|                 |        |                 |        |                 |
-+------+----------+        +------+----------+        +-------+---------+
-       |                         |                         |
-       |                         | HTTP/HTTPS              |
-       |                         |                         |
-       |                         v                         v
-       |                  +--------------+          +-----------------+
-       |                  | Бізнес-логіка |          |    База даних   |
-       |                  |   (API)      |          |                 |
-       |                  +------+-------+          +-----------------+
-       |                         |
-       |                         | SQL/NoSQL
-       |                         |
-       |                         v
-       |                  +--------------+
-       |                  |   Система    |
-       |                  |  бронювання |
-       |                  +------+-------+
-       |                         |
-       |                         | CRUD Operations
-       |                         |
-       |                         v
-       |                  +--------------+
-       |                  |    Система   |
-       |                  |  управління  |
-       |                  |  рестораном |
-       |                  +------+-------+
-       |                         |
-       |                         | RESTful API
-       |                         |
-       |                         v
-       |                  +--------------+
-       +----------------->|   Різні      |
-                          |   сервіси   |
-                          +--------------+
-}
-```
+<img src="Dmodel.png">
+**This diagram outlines the deployment model for your table reservation system:**
+- Development & Testing Environments: Using .NET 5, ASP.NET Core for backend development, React, TypeScript, and AntDesign for frontend development.
+- CI/CD Pipeline: Continuous Integration/Continuous Deployment for automated testing and deployment across different environments.
+- Staging & Production Environments: Deploying the backend and frontend components separately for staging and production environments to mirror the live system.
+- Database Deployment: Utilizing Azure SQL Database for user management and MongoDB for user reservations.
+- Optional On-Premises Servers: Considering on-premises servers as an optional part of the deployment for certain components if needed.
 
 ## **Resiliency Model**
 **Component Interaction Diagram**
