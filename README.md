@@ -333,72 +333,38 @@ Our services are intended for individuals above the age of 16 who can consent to
 
 ## **Resiliency Model**
 **Component Interaction Diagram**
-Interaction Model
-User - Web Application
-All user interactions with the web application, including sign-up, log-in, profile management, table reservations, and cancellations.
-
-Components - Services
-Components use services to connect with the backend for various functionalities.
-
-User Service - Authentication Service
-User service connects with the authentication service to handle user authentication.
-
-User Service - Core App
-User service connects with the core app to handle user interactions, such as adding, editing, and deleting reservations.
-
-All Crucial Services - LNU App
-All services use the LNU app module to handle creations, editing, or deletions.
-
-Core App - Database
-Core app connects to the database to perform user edits and handle reservation data.
-
-LNU App - Database
-LNU app connects to the database to perform actions related to specific objects.
-
-Authentication App - Database
-Authentication app connects to the database to create a user and perform authentication.
-
-Resiliency Model (Discover)
-
-User - Components
-        Failure Short Name: SSL certificate error
-        Failure Description: Browser cannot verify SSL certificates.
-        Response: Browser blocks the website, warning the user about trust issues.
-
-User Service - Core App
-        Failure Short Name: Service unreachable
-        Failure Description: Core app can't reach service due to connection loss or shutdown.
-        Response: Requests requiring UserService won't be handled.
-
-Services - LNU App
-        Failure Short Name: Service unreachable
-        Failure Description: LNU app can't reach service due to connection loss or shutdown.
-        Response: Requests requiring any service won't be handled.
-
-User Service - Auth App
-        Failure Short Name: Bad auth: Authentication
-        Failure Description: Incorrect credentials entered.
-        Response: User is not logged in.
-
-Components - Services
-        Failure Short Name: LNU credentials expire
-        Failure Description: Connection with LNU fails if credentials expire.
-        Response: API Gateway can't proceed with the request, impacting communication.
-
-LNU App - LNU Database
-        Failure Short Name: No space left on disk
-        Failure Description: Unable to create new events due to insufficient memory.
-        Response: Errors for any create event request; reading events work as usual.
-
-Core App - LNU Database
-        Failure Short Name: Database unreachable
-        Failure Description: Loss of DB access due to connectivity issues.
-        Response: Service can't write new changes to DB but can handle read requests with precached info.
-
-Auth App - LNU Database
-        Failure Short Name: No space left on disk
-        Failure Description: Unable to create new users.
-        Response: Errors for creating users.
+**Components of a Resiliency Model for Table Reservation System:**
+1. Redundancy and Fault Tolerance:
+- Data Redundancy: Implementing backup systems and databases to ensure data availability in case of failures.
+- Load Balancing: Distributing incoming traffic across multiple servers to prevent overloads and ensure system stability.
+2. Continuous Monitoring and Incident Response:
+- Real-time Monitoring: Implementing monitoring tools to detect abnormalities, anomalies, or security threats in the system.
+- Incident Response Plan: Developing and practicing a structured response plan to address potential system failures or security breaches promptly.
+3. Data Backup and Recovery:
+- Regular Backups: Creating and storing regular backups of critical data to minimize data loss in case of system failures.
+- Disaster Recovery Plan: Establishing a comprehensive recovery plan to restore data and operations swiftly after a disaster.
+4. Scalability and Elasticity:
+- Auto-scaling: Utilizing cloud-based services or infrastructure that can automatically scale resources up or down based on demand.
+- Flexible Architecture: Designing a system with a modular and flexible architecture that allows for easy adaptation to changing requirements.
+5. Security Measures:
+- Access Controls: Implementing robust authentication and authorization mechanisms to control access to sensitive data and system functionalities.
+- Encryption: Ensuring that sensitive data is encrypted both in transit and at rest to prevent unauthorized access.
+6. Testing and Simulation:
+- Stress Testing: Conducting stress tests to evaluate system performance under extreme conditions or high loads.
+- Simulated Failures: Simulating system failures to assess the readiness and effectiveness of recovery mechanisms.
+7. Documentation and Training:
+- Comprehensive Documentation: Maintaining clear documentation of system configurations, processes, and procedures for quick reference during incidents.
+- Training Programs: Providing training to staff regarding system resilience strategies, incident response, and recovery procedures.
+8. Collaboration and Communication:
+- Cross-team Collaboration: Fostering collaboration between different teams involved in system maintenance, security, and recovery efforts.
+- Communication Plans: Establishing communication channels and protocols to disseminate information effectively during incidents or crises.
+9. Regulatory Compliance and Governance:
+- Compliance Framework: Ensuring that the system adheres to relevant industry regulations and standards regarding data privacy and security.
+- Regular Audits: Conducting regular audits to assess compliance and identify areas for improvement.
+10. Adaptability and Innovation:
+- Continuous Improvement: Encouraging a culture of continuous improvement and innovation to adapt to evolving threats and technologies.
+- Feedback Loops: Establishing mechanisms to gather feedback from users and stakeholders for enhancing system resilience.
+        
 ## **Resiliency Model (Rate)**
 | No  | Effects                               | Portion Affected             | Detection        | Resolution                | Likelihood                         | Rate|
 |---- |-------------------------------------- | ------------- |----------------- |-------------------------- | ---------------------------------- |---- |
