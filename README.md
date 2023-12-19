@@ -289,7 +289,6 @@ Our services are intended for individuals above the age of 16 who can consent to
 <img src="Dmodel.png">
 
 **This diagram outlines the deployment model for your table reservation system:**
-
 - Development & Testing Environments: Using .NET 5, ASP.NET Core for backend development, React, TypeScript, and AntDesign for frontend development.
 - CI/CD Pipeline: Continuous Integration/Continuous Deployment for automated testing and deployment across different environments.
 - Staging & Production Environments: Deploying the backend and frontend components separately for staging and production environments to mirror the live system.
