@@ -331,8 +331,6 @@ Our services are intended for individuals above the age of 16 who can consent to
 }
 ```
 
-## **Monitoring & Alerting Model**
-
 ## **Resiliency Model**
 **Component Interaction Diagram**
 Interaction Model
@@ -523,7 +521,7 @@ Auth App - LNU Database
 Regulatory Compliance:
 - Ensure compliance with relevant data protection regulations and standards. Regularly review and update security practices to align with changing compliance requirements.
 
-
+## **Monitoring & Alerting Model**
 
 
 Local application insights
