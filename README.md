@@ -416,6 +416,40 @@ Auth App - LNU Database
 
 ## **Security Model**
 
+**Main threats (Threats):**
+1. Unauthorized access to users' personal data:
+- Fraud: Using encryption to store passwords, regularly updating security systems, restricting access to personal data to only authorized users.
+2. Attacks on authentication and user sessions:
+- Mitigation: Use of two-factor authentication, protection against interception of session IDs, regular update of session tokens.
+3. SQL injection and database attacks:
+- Mitigation: Use of parameterized queries, validation and filtering of input data, use of signed queries to reduce the risk of vulnerability.
+3. DDoS attacks (availability attacks):
+- Mitigation: Using a CDN to protect against DDoS, setting up monitoring for timely response to attacks.
+4. Data content threats (unauthorized data editing, for example):
+- Mitigation: Use of version control systems, backup of data, restriction of access to data editing.
+5. Social engineering (attacks on users):
+- Migrating: Staff training on social engineering, use of multi-level identity verification methods.
+6. Leakage of confidential information through unauthorized channels:
+- Migrating: Encrypting confidential data at rest and in transit, restricting access to confidential data.
+7. Vulnerabilities in software:
+- Monitoring: Regular execution of software patches and updates, audit of software code vulnerabilities.
+8. Insufficient API security:
+- Mitigation: Using authentication and authorization for APIs, restricting access to API keys.
+9. Insufficient audit security:
+- Monitoring: Conducting regular security audits, identifying and fixing potential vulnerabilities.
+
+**The minimum plan of measures (Mitigation Plan):**
+1. Encryption of user data in the database and during transmission.
+2. Use two-factor authentication for users and staff.
+3. Conducting regular security audits to identify potential threats.
+4. Protection against SQL injections through parameterized queries and data filtering.
+5. Using monitoring to detect and respond to DDoS attacks.
+6. Staff training on social engineering and data security.
+7. Regular software updates and patches.
+8. API access restrictions and authentication enforcement.
+9. Regular backup and protection of confidential data.
+10. Implementation of version control systems for data and restriction of editing access rights.
+
 ## **Authentication and Authorization**
 
 **User Authentication:**
@@ -490,8 +524,6 @@ Regulatory Compliance:
 - Ensure compliance with relevant data protection regulations and standards. Regularly review and update security practices to align with changing compliance requirements.
 
 
-## **Hosted Service**
 
-## **Telemetry**
 
 Local application insights
