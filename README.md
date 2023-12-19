@@ -128,30 +128,6 @@ User Management System:
 <img src="architecture (2).png">
 <br/>
 
-**ER diagram:**
-
-```sql
-{
-+----------------+       +-------------------+       +-------------------------+
-|    User        |       |   Reservation    |       |      Restaurant         |
-+----------------+       +-------------------+       +-------------------------+
-| UserId (PK)    |1      *| ReservationId (PK)|       | RestaurantId (PK)      |
-| FirstName      |-------<| UserId (FK)      |       | Name                    |
-| LastName       |       | TableId (FK)     |       | Location                |
-| Email          |       | ReservationTime  |       | Capacity                |
-| PasswordHash   |       | Status           |       | ...                     |
-| ...            |       +-------------------+       +-------------------------+
-+----------------+                                   |         Table           |
-                                                     +-------------------------+
-                                                     | TableId (PK)            |
-                                                     | RestaurantId (FK)      |
-                                                     | Number                  |
-                                                     | Capacity               |
-                                                     | Status                  |
-                                                     | ...                     |
-                                                     +-------------------------+
-}
-```
 ## **Concurrency patterns usage**
 
 Optimistic Concurrency Control:
@@ -219,6 +195,31 @@ Options may include reloading the data and reapplying their changes or merging t
 <img src="analytics model.png">
 
 ## **Data model**
+**ER diagram:**
+
+```sql
+{
++----------------+       +-------------------+       +-------------------------+
+|    User        |       |   Reservation    |       |      Restaurant         |
++----------------+       +-------------------+       +-------------------------+
+| UserId (PK)    |1      *| ReservationId (PK)|       | RestaurantId (PK)      |
+| FirstName      |-------<| UserId (FK)      |       | Name                    |
+| LastName       |       | TableId (FK)     |       | Location                |
+| Email          |       | ReservationTime  |       | Capacity                |
+| PasswordHash   |       | Status           |       | ...                     |
+| ...            |       +-------------------+       +-------------------------+
++----------------+                                   |         Table           |
+                                                     +-------------------------+
+                                                     | TableId (PK)            |
+                                                     | RestaurantId (FK)      |
+                                                     | Number                  |
+                                                     | Capacity               |
+                                                     | Status                  |
+                                                     | ...                     |
+                                                     +-------------------------+
+}
+```
+
 **Entities description**
 - User <=> Reservation: A user can have many reservations, but each reservation belongs to only one user. The relationship between a user and his reservations is determined by the UserId field in the Reservation table, which references the UserId in the User table.
 - User <=> Table: The user can book tables. This happens through reservations, where the TableId field refers to the corresponding TableId in the Table table.
