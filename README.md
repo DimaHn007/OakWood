@@ -259,26 +259,26 @@ Options may include reloading the data and reapplying their changes or merging t
 - Capacity – table capacity
 - Status – table status
 
-**Data Retention Policy**
-This policy outlines how our table reservation service handles and retains user data.
-**Types of Information Collected**
+**Data Retention Policy** <br/>
+This policy outlines how our table reservation service handles and retains user data. <br/>
+**Types of Information Collected** <br/>
 - Information Provided by Users: To facilitate table reservations, users are required to provide personal details including their full name, email, and password during registration.
 - Reservation Data: Information regarding the reservations made, including choice of restaurant, date, time, number of guests, and reservation status.
 - Restaurant Information: Details about restaurants including name, location, contact information, capacity, working hours, and cuisine type.
-**Utilization of Information**
+**Utilization of Information** <br/>
 - Service Facilitation: The collected data is used to facilitate table reservations, manage user accounts, and provide personalized experiences.
 - Improvement and Analytics: User data is anonymized and used for statistical analysis to enhance service quality, identify popular restaurants, and improve user experience.
-**Information Sharing**
+**Information Sharing** <br/>
 We maintain strict confidentiality standards and do not share user information with external parties. Restaurant details are made public for user reference but do not include specific user data.
-**Data Retention Duration**
+**Data Retention Duration** <br/>
 - User profile information and reservation history are retained for the duration of the user's account existence.
 - Reservation details are retained for statistical analysis and service improvement purposes.
 - Restaurant information remains available for reference unless removed by the administrator.
-**User Control**
+**User Control** <br/>
 Users have complete control over their information. They can access, edit, update, or delete their profile and reservation history through their account settings.
-**Administrator Rights**
+**Administrator Rights** <br/>
 Administrators have the authority to manage restaurant information, view and manage all reservations, and handle user accounts. This includes confirmation, cancellation, and editing of reservations and the ability to block or modify user accounts in case of policy violations.
-**Target Audience**
+**Target Audience** <br/>
 Our services are intended for individuals above the age of 16 who can consent to personal data processing in their country. In some instances, parental or guardian consent might be required for minors.
 
 ## **Deployment Model**
