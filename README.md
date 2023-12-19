@@ -191,10 +191,6 @@ If there's a mismatch, handle the conflict by notifying the user.
 Notify the user about the conflict and provide options for resolution.
 Options may include reloading the data and reapplying their changes or merging their changes with the updated data.
 
-## **Analytics model**
-<img src="analytics model.png">
-
-## **Data model**
 **ER diagram:**
 
 ```sql
@@ -219,6 +215,15 @@ Options may include reloading the data and reapplying their changes or merging t
                                                      +-------------------------+
 }
 ```
+
+## **Analytics model**
+<img src="analytics model.png">
+
+## **Data model**
+
+<img src="ERdiagram.png">
+
+
 
 **Entities description**
 - User <=> Reservation: A user can have many reservations, but each reservation belongs to only one user. The relationship between a user and his reservations is determined by the UserId field in the Reservation table, which references the UserId in the User table.
@@ -253,6 +258,28 @@ Options may include reloading the data and reapplying their changes or merging t
 - Number – number of table
 - Capacity – table capacity
 - Status – table status
+
+**Data Retention Policy**
+This policy outlines how our table reservation service handles and retains user data.
+**Types of Information Collected**
+- Information Provided by Users: To facilitate table reservations, users are required to provide personal details including their full name, email, and password during registration.
+- Reservation Data: Information regarding the reservations made, including choice of restaurant, date, time, number of guests, and reservation status.
+- Restaurant Information: Details about restaurants including name, location, contact information, capacity, working hours, and cuisine type.
+**Utilization of Information**
+- Service Facilitation: The collected data is used to facilitate table reservations, manage user accounts, and provide personalized experiences.
+- Improvement and Analytics: User data is anonymized and used for statistical analysis to enhance service quality, identify popular restaurants, and improve user experience.
+**Information Sharing**
+We maintain strict confidentiality standards and do not share user information with external parties. Restaurant details are made public for user reference but do not include specific user data.
+**Data Retention Duration**
+- User profile information and reservation history are retained for the duration of the user's account existence.
+- Reservation details are retained for statistical analysis and service improvement purposes.
+- Restaurant information remains available for reference unless removed by the administrator.
+**User Control**
+Users have complete control over their information. They can access, edit, update, or delete their profile and reservation history through their account settings.
+**Administrator Rights**
+Administrators have the authority to manage restaurant information, view and manage all reservations, and handle user accounts. This includes confirmation, cancellation, and editing of reservations and the ability to block or modify user accounts in case of policy violations.
+**Target Audience**
+Our services are intended for individuals above the age of 16 who can consent to personal data processing in their country. In some instances, parental or guardian consent might be required for minors.
 
 ## **Deployment Model**
 ```sql
