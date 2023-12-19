@@ -7,7 +7,7 @@
 - [Architecture](#architecture)
 - [Concurrency patterns usage](#concurrency-patterns-usage)
 - [Analytics model](#Analytics-model)
-  
+<br/>
 - [Data model](#Data-model)
 - [Resiliency model](#resiliency-model)
 - [Deployment Model](#Deployment-Model)
